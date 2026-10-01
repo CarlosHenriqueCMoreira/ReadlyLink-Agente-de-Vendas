@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: int_livros_pegos
+    description: Uma linha por livro retirado. livro_id identifica a obra (saga + volume); edicao_id é o ID original do CSV.
+    columns:
+      - name: retirada_id
+        data_tests: [not_null, unique]
+      - name: usuario_id
+        data_tests: [not_null]
+      - name: livro_id
+        description: Obra do catálogo. Nulo significaria um livro do histórico sem correspondência no catálogo.
+        data_tests: [not_null]
+      - name: formato
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["FISICO", "DIGITAL"]
+
+  - name: int_perfil_leitura_usuario
+    description: Gostos e ponto atual da última saga de cada usuário.
+    columns:
+      - name: usuario_id
+        data_tests: [not_null, unique]
+      - name: genero_preferido
+        data_tests: [not_null]
+      - name: tom_preferido
+        data_tests: [not_null]
+      - name: formato_preferido
+        data_tests: [not_null]
+      - name: ultima_saga
+        data_tests: [not_null]
+
+  - name: int_contexto_atendimento
+    description: Pedido do cliente, histórico, livro procurado e recomendação antiga de cada atendimento.
+    columns:
+      - name: atendimento_id
+        data_tests: [not_null, unique]
+
+  - name: int_candidatos_atendimento
+    description: Motor de regras. Cada atendimento cruzado com cada produto disponível e as regras de adequação.
+    columns:
+      - name: pontuacao
+        data_tests: [not_null]
+      - name: justificativa
+        data_tests: [not_null]

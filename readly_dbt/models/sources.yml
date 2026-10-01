@@ -1,0 +1,42 @@
+version: 2
+
+sources:
+  - name: readly_raw
+    description: Dados recebidos em CSV e carregados pelo ETL em Python.
+    schema: raw
+    tables:
+      - name: usuarios_csv
+        description: Histórico de usuários e livros retirados.
+        columns:
+          - name: registro_hash
+            data_tests: [not_null, unique]
+          - name: usuario_ref
+            data_tests: [not_null]
+
+      - name: catalogo_livros
+        description: Catálogo comercial com preço e estoque por formato.
+        columns:
+          - name: produto_id
+            data_tests: [not_null, unique]
+          - name: preco
+            data_tests: [not_null]
+          - name: estoque
+            data_tests: [not_null]
+
+      - name: atendimentos
+        description: Conversas simuladas com intenção, recomendação e resultado.
+        columns:
+          - name: atendimento_id
+            data_tests: [not_null, unique]
+          - name: usuario_id
+            data_tests: [not_null]
+          - name: resultado
+            data_tests: [not_null]
+
+      - name: vendas
+        description: Pedidos simulados originados nos atendimentos.
+        columns:
+          - name: pedido_id
+            data_tests: [not_null, unique]
+          - name: atendimento_id
+            data_tests: [not_null]

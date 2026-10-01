@@ -1,0 +1,61 @@
+version: 2
+
+models:
+  - name: stg_usuarios
+    columns:
+      - name: usuario_id
+        data_tests: [not_null, unique]
+      - name: documento
+        data_tests: [not_null, unique]
+      - name: tipo_documento
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["CPF", "RG"]
+
+  - name: stg_catalogo_livros
+    columns:
+      - name: produto_id
+        data_tests: [not_null, unique]
+      - name: livro_id
+        data_tests: [not_null]
+      - name: formato
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["FISICO", "DIGITAL"]
+
+  - name: stg_atendimentos
+    columns:
+      - name: atendimento_id
+        data_tests: [not_null, unique]
+      - name: usuario_id
+        data_tests: [not_null]
+      - name: resultado
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["VENDA_CONCLUIDA", "SEM_COMPRA"]
+      - name: para_quem
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["PROPRIO", "PRESENTE"]
+      - name: motivo_abandono
+        data_tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - preco_acima_do_orcamento
+                  - livro_procurado_sem_estoque
+                  - nao_encontrou_continuacao
+                  - recomendacao_nao_combinou
+                  - abandono_no_checkout
+                  - apenas_pesquisando
+
+  - name: stg_vendas
+    columns:
+      - name: pedido_id
+        data_tests: [not_null, unique]
+      - name: atendimento_id
+        data_tests: [not_null, unique]

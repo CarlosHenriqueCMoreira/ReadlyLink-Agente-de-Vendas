@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Diagnóstico e respostas de negócio da Readly Link com dados simulados.">
+  <title>Readly Link | Respostas para o Matheus</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#inicio">
+        <span class="brand-mark">RL</span>
+        <span><strong>Readly Link</strong><small>Decisões de vendas</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#diagnostico">Diagnóstico</a>
+        <a href="#antes-depois">Antes e depois</a>
+        <a href="#solucoes">Soluções</a>
+        <a href="#vendedor">Vendedor</a>
+        <a href="#exemplo">Exemplo</a>
+      </div>
+    </nav>
+
+    <div class="hero-content container">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="status-dot"></span> <span id="hero-selo">Dados fictícios · resultados calculados pelo dbt</span></span>
+        <p class="kicker">Relatório para o Matheus</p>
+        <h1>O que está impedindo o cliente de comprar?</h1>
+        <p class="lead">
+          A análise mede o atendimento antigo, explica cada abandono com os dados que o
+          causaram e mostra o que as regras novas oferecem a cada cliente perdido.
+          Todos os números desta página vêm das tabelas do dbt.
+        </p>
+        <a class="button button-primary" href="#diagnostico">Ver as respostas</a>
+      </div>
+
+      <aside class="hero-panel">
+        <span class="panel-label">Maior causa de abandono</span>
+        <strong class="big-number" id="principal-percentual">—</strong>
+        <h2 id="principal-rotulo">A carregar…</h2>
+        <p id="principal-detalhe"></p>
+        <div class="recommendation">
+          <span>O que muda</span>
+          <p id="principal-mudanca">—</p>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container" id="diagnostico">
+      <div class="section-heading">
+        <div>
+          <span class="section-number">01 · DIAGNÓSTICO</span>
+          <h2>O que os dados dizem sobre o atendimento antigo</h2>
+        </div>
+        <p id="diagnostico-resumo">Oito perguntas sobre o que impede a compra, respondidas com os dados de 2.400 atendimentos simulados.</p>
+      </div>
+      <div class="answer-grid" data-grupo="diagnostico" aria-live="polite"></div>
+    </section>
+
+    <section class="section section-dark" id="abandono">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-number section-number-light">02 · POR QUE ABANDONAM</span>
+            <h2>Cada motivo tem uma causa visível nos dados</h2>
+          </div>
+          <p>Dos <strong id="total-sem-compra">—</strong> atendimentos sem compra, estes foram os motivos registrados. Um teste do dbt falha se algum motivo aparecer sem a causa correspondente.</p>
+        </div>
+        <div class="bars" id="lista-abandonos" aria-live="polite"></div>
+
+        <div class="funnel-block">
+          <h3>Onde a venda para</h3>
+          <div class="funnel-list" id="funil"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="antes-depois">
+      <div class="section-heading">
+        <div>
+          <span class="section-number">03 · ANTES E DEPOIS</span>
+          <h2>O que estava ruim e o que a solução mudou</h2>
+        </div>
+        <p>Os mesmos atendimentos avaliados com a recomendação antiga e com a nova. A comparação mede o cumprimento de regras. O efeito nas vendas só pode ser medido com o novo atendimento em produção.</p>
+      </div>
+      <div class="compare-table" id="tabela-antes-depois" role="table" aria-label="Comparação antes e depois"></div>
+    </section>
+
+    <section class="section section-solution" id="solucoes">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-number section-number-light">04 · SOLUÇÃO PRODUZIDA PELO CÓDIGO</span>
+            <h2>O que o sistema entregou para cada problema</h2>
+          </div>
+          <p>Cada atendimento perdido recebe uma ação. Toda solução automática está disponível, cabe no orçamento, não foi lida e respeita a saga. Quando nenhum livro cumpre as regras, o caso vai para uma pessoa.</p>
+        </div>
+
+        <div class="solution-summary">
+          <div><strong id="solucoes-geradas">—</strong><span>casos com solução automática</span></div>
+          <div><strong id="solucoes-cobertura">—</strong><span>cobertura dos abandonos</span></div>
+          <div><strong id="solucoes-revisao">—</strong><span>casos para revisão humana</span></div>
+        </div>
+
+        <div class="solution-grid" id="resultados-solucoes" aria-live="polite"></div>
+
+        <div class="evidence-note">
+          <strong>O resultado comprovado é a ação gerada, não a venda.</strong>
+          <p>Nenhuma ação é contada como venda recuperada. A próxima medição precisa registrar quantos clientes aceitaram a alternativa e concluíram a compra.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <div>
+          <span class="section-number">05 · RESPOSTAS SOBRE AS SOLUÇÕES</span>
+          <h2>Quem recebeu o quê</h2>
+        </div>
+        <p>Como cada tipo de cliente perdido é tratado e quantos casos ficam com uma pessoa.</p>
+      </div>
+      <div class="answer-grid" data-grupo="solucoes" aria-live="polite"></div>
+    </section>
+
+    <section class="section section-soft" id="vendedor">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-number">06 · MÉTODO DO VENDEDOR</span>
+            <h2>O que perguntar antes de recomendar</h2>
+          </div>
+          <p>Cada pergunta preenche um campo do atendimento, e esse campo é usado por uma regra do motor de recomendação.</p>
+        </div>
+        <ol class="question-list" id="perguntas-vendedor"></ol>
+
+        <div class="fit-grid">
+          <article class="fit-card fit-good">
+            <span class="fit-label">Livro adequado</span>
+            <h3>Cumpre todas as regras</h3>
+            <ul id="regras-adequado"></ul>
+          </article>
+          <article class="fit-card fit-bad">
+            <span class="fit-label">Livro inadequado</span>
+            <h3>Viola pelo menos uma regra</h3>
+            <ul>
+              <li>Está acima do orçamento declarado</li>
+              <li>É de outro gênero sem o cliente ter pedido aquele título</li>
+              <li>Pula um volume da saga</li>
+              <li>Repete um livro que a pessoa já leu</li>
+              <li>Está indisponível no formato oferecido</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="answer-grid answer-grid-spaced" data-grupo="vendedor" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section container" id="exemplo">
+      <div class="section-heading">
+        <div>
+          <span class="section-number">07 · EXEMPLO EXPLICÁVEL</span>
+          <h2>Uma recomendação que o vendedor consegue justificar</h2>
+        </div>
+        <p>Um atendimento real da base simulada: o que a cliente pediu, o que o agente antigo ofereceu e o que as regras novas oferecem, com a pontuação aberta.</p>
+      </div>
+
+      <article class="recommendation-card">
+        <div class="reader">
+          <span class="avatar" id="iniciais-cliente">—</span>
+          <div><small>Cliente</small><h3 id="nome-cliente">A carregar…</h3><small id="atendimento-cliente"></small></div>
+        </div>
+        <div class="preference-grid" id="dados-cliente"></div>
+        <span class="decision-arrow">→</span>
+        <div class="book-result">
+          <small>Livro recomendado agora</small>
+          <h3 id="livro-recomendado">—</h3>
+          <p id="motivo-recomendacao">—</p>
+          <div class="book-meta">
+            <span id="preco-recomendado">—</span>
+            <span id="estoque-recomendado">—</span>
+            <span id="pontos-recomendacao">—</span>
+          </div>
+          <div class="score-breakdown" id="pontos-detalhe"></div>
+          <p class="before-note" id="antes-recomendacao"></p>
+        </div>
+      </article>
+
+      <div class="answer-grid answer-grid-spaced" data-grupo="exemplo" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div><strong>Readly Link</strong><span>Case do Matheus · dados fictícios</span></div>
+      <p id="data-atualizacao">A carregar última execução…</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+readly_dbt/target/
+readly_dbt/logs/
+readly_dbt/dbt_packages/
+readly_dbt/.user.yml

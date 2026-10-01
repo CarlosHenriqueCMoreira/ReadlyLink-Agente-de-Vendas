@@ -1,0 +1,22 @@
+name: readly_dbt
+version: "1.0.0"
+config-version: 2
+
+profile: readly_dbt
+
+model-paths: ["models"]
+test-paths: ["tests"]
+clean-targets: ["target", "dbt_packages"]
+
+flags:
+  send_anonymous_usage_stats: false
+
+models:
+  readly_dbt:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+      # int_candidatos_atendimento é materializado como tabela no próprio modelo.
+    marts:
+      +materialized: table

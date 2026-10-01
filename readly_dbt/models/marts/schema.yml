@@ -1,0 +1,135 @@
+version: 2
+
+models:
+  - name: dim_usuarios
+    columns:
+      - name: usuario_id
+        data_tests: [not_null, unique]
+
+  - name: dim_livros
+    columns:
+      - name: livro_id
+        data_tests: [not_null, unique]
+
+  - name: dim_produtos
+    columns:
+      - name: produto_id
+        data_tests: [not_null, unique]
+      - name: livro_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_livros')
+                field: livro_id
+
+  - name: fct_livros_pegos
+    columns:
+      - name: retirada_id
+        data_tests: [not_null, unique]
+      - name: usuario_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_usuarios')
+                field: usuario_id
+
+  - name: fct_atendimentos
+    columns:
+      - name: atendimento_id
+        data_tests: [not_null, unique]
+      - name: usuario_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_usuarios')
+                field: usuario_id
+
+  - name: fct_vendas
+    columns:
+      - name: pedido_id
+        data_tests: [not_null, unique]
+      - name: atendimento_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('fct_atendimentos')
+                field: atendimento_id
+      - name: produto_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_produtos')
+                field: produto_id
+
+  - name: mart_recomendacoes_usuario
+    columns:
+      - name: usuario_id
+        data_tests: [not_null, unique]
+      - name: motivo
+        data_tests: [not_null]
+      - name: produto_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_produtos')
+                field: produto_id
+
+  - name: mart_motivos_abandono
+    columns:
+      - name: motivo_abandono
+        data_tests: [not_null, unique]
+
+  - name: mart_funil_vendas
+    columns:
+      - name: ordem
+        data_tests: [not_null, unique]
+
+  - name: mart_qualidade_operacional
+    columns:
+      - name: atendimentos
+        data_tests: [not_null]
+
+  - name: mart_resumo_usuarios
+    columns:
+      - name: usuario_id
+        data_tests: [not_null, unique]
+
+  - name: mart_recomendacao_atendimento
+    description: Nova recomendação (o "depois") para cada atendimento, com justificativa e pontuação por regra.
+    columns:
+      - name: atendimento_id
+        data_tests: [not_null, unique]
+
+  - name: mart_antes_depois
+    description: Cumprimento das regras pela recomendação antiga e pela nova nos mesmos atendimentos.
+    columns:
+      - name: indicador
+        data_tests: [not_null, unique]
+
+  - name: mart_solucoes_atendimento
+    columns:
+      - name: atendimento_id
+        data_tests: [not_null, unique]
+      - name: motivo_abandono
+        data_tests: [not_null]
+      - name: acao_gerada
+        data_tests: [not_null]
+      - name: status_solucao
+        data_tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - ACAO_PRONTA
+                  - ALTERNATIVA_ENCONTRADA
+                  - REVISAO_HUMANA
+      - name: motivo_revisao
+        description: Preenchido só nos casos enviados para revisão humana.
+
+  - name: mart_resultado_solucoes
+    columns:
+      - name: motivo_abandono
+        data_tests: [not_null, unique]
+      - name: casos_encontrados
+        data_tests: [not_null]
+      - name: casos_com_solucao
+        data_tests: [not_null]

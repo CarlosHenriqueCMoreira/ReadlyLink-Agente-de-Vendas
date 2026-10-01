@@ -1,0 +1,97 @@
+produto_id,livro_id,saga,titulo,volume,genero,temas,ritmo,tom,publico_alvo,formato,preco,estoque,disponivel,atualizado_em
+1-FISICO,1,As Torres de Âmbar,A Chave de Âmbar,1,Fantasia,"aventura,reinos",acelerado,épico,Adulto,FISICO,21.95,4,SIM,2026-09-29 08:00:00
+1-DIGITAL,1,As Torres de Âmbar,A Chave de Âmbar,1,Fantasia,"aventura,reinos",acelerado,épico,Adulto,DIGITAL,11.95,9999,SIM,2026-09-29 08:00:00
+2-FISICO,2,As Torres de Âmbar,O Vale das Lanternas,2,Fantasia,"aventura,reinos",acelerado,épico,Adulto,FISICO,25.00,11,SIM,2026-09-29 08:00:00
+2-DIGITAL,2,As Torres de Âmbar,O Vale das Lanternas,2,Fantasia,"aventura,reinos",acelerado,épico,Adulto,DIGITAL,15.00,9999,SIM,2026-09-29 08:00:00
+3-FISICO,3,As Torres de Âmbar,A Torre do Amanhecer,3,Fantasia,"aventura,reinos",acelerado,épico,Adulto,FISICO,28.05,18,SIM,2026-09-29 08:00:00
+3-DIGITAL,3,As Torres de Âmbar,A Torre do Amanhecer,3,Fantasia,"aventura,reinos",acelerado,épico,Adulto,DIGITAL,18.05,9999,SIM,2026-09-29 08:00:00
+4-FISICO,4,As Torres de Âmbar,O Reino de Cinzas,4,Fantasia,"aventura,reinos",acelerado,épico,Adulto,FISICO,31.10,1,SIM,2026-09-29 08:00:00
+4-DIGITAL,4,As Torres de Âmbar,O Reino de Cinzas,4,Fantasia,"aventura,reinos",acelerado,épico,Adulto,DIGITAL,21.10,9999,SIM,2026-09-29 08:00:00
+5-FISICO,5,Marés do Norte,O Jardim das Marés,1,Romance,"mar,família",moderado,nostálgico,Adulto,FISICO,27.15,8,SIM,2026-09-29 08:00:00
+5-DIGITAL,5,Marés do Norte,O Jardim das Marés,1,Romance,"mar,família",moderado,nostálgico,Adulto,DIGITAL,17.15,9999,SIM,2026-09-29 08:00:00
+6-FISICO,6,Marés do Norte,Cartas da Cidade Azul,2,Romance,"mar,família",moderado,nostálgico,Adulto,FISICO,30.20,15,SIM,2026-09-29 08:00:00
+6-DIGITAL,6,Marés do Norte,Cartas da Cidade Azul,2,Romance,"mar,família",moderado,nostálgico,Adulto,DIGITAL,20.20,9999,SIM,2026-09-29 08:00:00
+7-FISICO,7,Marés do Norte,O Último Faroleiro,3,Romance,"mar,família",moderado,nostálgico,Adulto,FISICO,24.15,0,NAO,2026-09-29 08:00:00
+7-DIGITAL,7,Marés do Norte,O Último Faroleiro,3,Romance,"mar,família",moderado,nostálgico,Adulto,DIGITAL,14.15,9999,SIM,2026-09-29 08:00:00
+8-FISICO,8,Marés do Norte,A Ilha Submersa,4,Romance,"mar,família",moderado,nostálgico,Adulto,FISICO,27.20,5,SIM,2026-09-29 08:00:00
+8-DIGITAL,8,Marés do Norte,A Ilha Submersa,4,Romance,"mar,família",moderado,nostálgico,Adulto,DIGITAL,17.20,9999,SIM,2026-09-29 08:00:00
+9-FISICO,9,Arquivos do Céu,A Biblioteca das Nuvens,1,Fantasia,"mistério,conhecimento",contemplativo,esperançoso,Adulto,FISICO,23.25,12,SIM,2026-09-29 08:00:00
+9-DIGITAL,9,Arquivos do Céu,A Biblioteca das Nuvens,1,Fantasia,"mistério,conhecimento",contemplativo,esperançoso,Adulto,DIGITAL,13.25,9999,SIM,2026-09-29 08:00:00
+10-FISICO,10,Arquivos do Céu,O Mapa de Vidro,2,Fantasia,"mistério,conhecimento",contemplativo,esperançoso,Adulto,FISICO,26.30,19,SIM,2026-09-29 08:00:00
+10-DIGITAL,10,Arquivos do Céu,O Mapa de Vidro,2,Fantasia,"mistério,conhecimento",contemplativo,esperançoso,Adulto,DIGITAL,16.30,9999,SIM,2026-09-29 08:00:00
+11-FISICO,11,Arquivos do Céu,O Palácio dos Ventos,3,Fantasia,"mistério,conhecimento",contemplativo,esperançoso,Adulto,FISICO,29.35,2,SIM,2026-09-29 08:00:00
+11-DIGITAL,11,Arquivos do Céu,O Palácio dos Ventos,3,Fantasia,"mistério,conhecimento",contemplativo,esperançoso,Adulto,DIGITAL,19.35,9999,SIM,2026-09-29 08:00:00
+12-FISICO,12,Arquivos do Céu,A Última Constelação,4,Fantasia,"mistério,conhecimento",contemplativo,esperançoso,Adulto,FISICO,32.40,9,SIM,2026-09-29 08:00:00
+12-DIGITAL,12,Arquivos do Céu,A Última Constelação,4,Fantasia,"mistério,conhecimento",contemplativo,esperançoso,Adulto,DIGITAL,22.40,9999,SIM,2026-09-29 08:00:00
+13-FISICO,13,Estações,Caminhos de Outono,1,Romance,"relacionamentos,mudança",leve,emocional,Adulto,FISICO,28.45,16,SIM,2026-09-29 08:00:00
+13-DIGITAL,13,Estações,Caminhos de Outono,1,Romance,"relacionamentos,mudança",leve,emocional,Adulto,DIGITAL,18.45,9999,SIM,2026-09-29 08:00:00
+14-FISICO,14,Estações,O Caderno de Inverno,2,Romance,"relacionamentos,mudança",leve,emocional,Adulto,FISICO,22.40,0,NAO,2026-09-29 08:00:00
+14-DIGITAL,14,Estações,O Caderno de Inverno,2,Romance,"relacionamentos,mudança",leve,emocional,Adulto,DIGITAL,12.40,9999,SIM,2026-09-29 08:00:00
+15-FISICO,15,Estações,O Retrato da Primavera,3,Romance,"relacionamentos,mudança",leve,emocional,Adulto,FISICO,25.45,6,SIM,2026-09-29 08:00:00
+15-DIGITAL,15,Estações,O Retrato da Primavera,3,Romance,"relacionamentos,mudança",leve,emocional,Adulto,DIGITAL,15.45,9999,SIM,2026-09-29 08:00:00
+16-FISICO,16,Estações,A Última Página do Verão,4,Romance,"relacionamentos,mudança",leve,emocional,Adulto,FISICO,28.50,13,SIM,2026-09-29 08:00:00
+16-DIGITAL,16,Estações,A Última Página do Verão,4,Romance,"relacionamentos,mudança",leve,emocional,Adulto,DIGITAL,18.50,9999,SIM,2026-09-29 08:00:00
+17-FISICO,17,Ilhas Errantes,A Ilha dos Ventos,1,Aventura,"viagem,descoberta",acelerado,aventureiro,Adulto,FISICO,24.55,20,SIM,2026-09-29 08:00:00
+17-DIGITAL,17,Ilhas Errantes,A Ilha dos Ventos,1,Aventura,"viagem,descoberta",acelerado,aventureiro,Adulto,DIGITAL,14.55,9999,SIM,2026-09-29 08:00:00
+18-FISICO,18,Ilhas Errantes,Memórias do Rio Claro,2,Aventura,"viagem,descoberta",acelerado,aventureiro,Adulto,FISICO,27.60,3,SIM,2026-09-29 08:00:00
+18-DIGITAL,18,Ilhas Errantes,Memórias do Rio Claro,2,Aventura,"viagem,descoberta",acelerado,aventureiro,Adulto,DIGITAL,17.60,9999,SIM,2026-09-29 08:00:00
+19-FISICO,19,Ilhas Errantes,O Porto das Histórias,3,Aventura,"viagem,descoberta",acelerado,aventureiro,Adulto,FISICO,30.65,10,SIM,2026-09-29 08:00:00
+19-DIGITAL,19,Ilhas Errantes,O Porto das Histórias,3,Aventura,"viagem,descoberta",acelerado,aventureiro,Adulto,DIGITAL,20.65,9999,SIM,2026-09-29 08:00:00
+20-FISICO,20,Ilhas Errantes,A Travessia das Flores,4,Aventura,"viagem,descoberta",acelerado,aventureiro,Adulto,FISICO,33.70,17,SIM,2026-09-29 08:00:00
+20-DIGITAL,20,Ilhas Errantes,A Travessia das Flores,4,Aventura,"viagem,descoberta",acelerado,aventureiro,Adulto,DIGITAL,23.70,9999,SIM,2026-09-29 08:00:00
+21-FISICO,21,Jardins Secretos,O Segredo das Acácias,1,Mistério,"segredos,família",moderado,intrigante,Adulto,FISICO,20.65,0,NAO,2026-09-29 08:00:00
+21-DIGITAL,21,Jardins Secretos,O Segredo das Acácias,1,Mistério,"segredos,família",moderado,intrigante,Adulto,DIGITAL,10.65,9999,SIM,2026-09-29 08:00:00
+22-FISICO,22,Jardins Secretos,As Pontes de Aurora,2,Mistério,"segredos,família",moderado,intrigante,Adulto,FISICO,23.70,7,SIM,2026-09-29 08:00:00
+22-DIGITAL,22,Jardins Secretos,As Pontes de Aurora,2,Mistério,"segredos,família",moderado,intrigante,Adulto,DIGITAL,13.70,9999,SIM,2026-09-29 08:00:00
+23-FISICO,23,Jardins Secretos,A Casa das Sete Janelas,3,Mistério,"segredos,família",moderado,intrigante,Adulto,FISICO,26.75,14,SIM,2026-09-29 08:00:00
+23-DIGITAL,23,Jardins Secretos,A Casa das Sete Janelas,3,Mistério,"segredos,família",moderado,intrigante,Adulto,DIGITAL,16.75,9999,SIM,2026-09-29 08:00:00
+24-FISICO,24,Jardins Secretos,A Canção dos Pinheiros,4,Mistério,"segredos,família",moderado,intrigante,Adulto,FISICO,29.80,0,NAO,2026-09-29 08:00:00
+24-DIGITAL,24,Jardins Secretos,A Canção dos Pinheiros,4,Mistério,"segredos,família",moderado,intrigante,Adulto,DIGITAL,19.80,9999,SIM,2026-09-29 08:00:00
+25-FISICO,25,Viajantes de Papel,O Viajante de Papel,1,Ficção contemporânea,"livros,amizade",leve,acolhedor,Adulto,FISICO,25.85,4,SIM,2026-09-29 08:00:00
+25-DIGITAL,25,Viajantes de Papel,O Viajante de Papel,1,Ficção contemporânea,"livros,amizade",leve,acolhedor,Adulto,DIGITAL,15.85,9999,SIM,2026-09-29 08:00:00
+26-FISICO,26,Viajantes de Papel,O Trem das Estrelas,2,Ficção contemporânea,"livros,amizade",leve,acolhedor,Adulto,FISICO,28.90,11,SIM,2026-09-29 08:00:00
+26-DIGITAL,26,Viajantes de Papel,O Trem das Estrelas,2,Ficção contemporânea,"livros,amizade",leve,acolhedor,Adulto,DIGITAL,18.90,9999,SIM,2026-09-29 08:00:00
+27-FISICO,27,Viajantes de Papel,A Estrada de Cristal,3,Ficção contemporânea,"livros,amizade",leve,acolhedor,Adulto,FISICO,31.95,18,SIM,2026-09-29 08:00:00
+27-DIGITAL,27,Viajantes de Papel,A Estrada de Cristal,3,Ficção contemporânea,"livros,amizade",leve,acolhedor,Adulto,DIGITAL,21.95,9999,SIM,2026-09-29 08:00:00
+28-FISICO,28,Viajantes de Papel,Os Dias do Cometa,4,Ficção contemporânea,"livros,amizade",leve,acolhedor,Adulto,FISICO,25.90,1,SIM,2026-09-29 08:00:00
+28-DIGITAL,28,Viajantes de Papel,Os Dias do Cometa,4,Ficção contemporânea,"livros,amizade",leve,acolhedor,Adulto,DIGITAL,15.90,9999,SIM,2026-09-29 08:00:00
+29-FISICO,29,Serra Dourada,Crônicas da Serra Dourada,1,Aventura,"montanha,coragem",acelerado,inspirador,Adulto,FISICO,21.95,8,SIM,2026-09-29 08:00:00
+29-DIGITAL,29,Serra Dourada,Crônicas da Serra Dourada,1,Aventura,"montanha,coragem",acelerado,inspirador,Adulto,DIGITAL,11.95,9999,SIM,2026-09-29 08:00:00
+30-FISICO,30,Serra Dourada,A Oficina dos Sonhos,2,Aventura,"montanha,coragem",acelerado,inspirador,Adulto,FISICO,25.00,15,SIM,2026-09-29 08:00:00
+30-DIGITAL,30,Serra Dourada,A Oficina dos Sonhos,2,Aventura,"montanha,coragem",acelerado,inspirador,Adulto,DIGITAL,15.00,9999,SIM,2026-09-29 08:00:00
+31-FISICO,31,Serra Dourada,Horizontes de Cobre,3,Aventura,"montanha,coragem",acelerado,inspirador,Adulto,FISICO,28.05,0,NAO,2026-09-29 08:00:00
+31-DIGITAL,31,Serra Dourada,Horizontes de Cobre,3,Aventura,"montanha,coragem",acelerado,inspirador,Adulto,DIGITAL,18.05,9999,SIM,2026-09-29 08:00:00
+32-FISICO,32,Serra Dourada,Os Guardiões do Horizonte,4,Aventura,"montanha,coragem",acelerado,inspirador,Adulto,FISICO,31.10,5,SIM,2026-09-29 08:00:00
+32-DIGITAL,32,Serra Dourada,Os Guardiões do Horizonte,4,Aventura,"montanha,coragem",acelerado,inspirador,Adulto,DIGITAL,21.10,9999,SIM,2026-09-29 08:00:00
+33-FISICO,33,Cidades de Sal,O Labirinto de Sal,1,Ficção histórica,"memória,cidade",moderado,melancólico,Adulto,FISICO,27.15,12,SIM,2026-09-29 08:00:00
+33-DIGITAL,33,Cidades de Sal,O Labirinto de Sal,1,Ficção histórica,"memória,cidade",moderado,melancólico,Adulto,DIGITAL,17.15,9999,SIM,2026-09-29 08:00:00
+34-FISICO,34,Cidades de Sal,O Relógio da Praça,2,Ficção histórica,"memória,cidade",moderado,melancólico,Adulto,FISICO,30.20,19,SIM,2026-09-29 08:00:00
+34-DIGITAL,34,Cidades de Sal,O Relógio da Praça,2,Ficção histórica,"memória,cidade",moderado,melancólico,Adulto,DIGITAL,20.20,9999,SIM,2026-09-29 08:00:00
+35-FISICO,35,Cidades de Sal,O Mercado das Sombras,3,Ficção histórica,"memória,cidade",moderado,melancólico,Adulto,FISICO,24.15,2,SIM,2026-09-29 08:00:00
+35-DIGITAL,35,Cidades de Sal,O Mercado das Sombras,3,Ficção histórica,"memória,cidade",moderado,melancólico,Adulto,DIGITAL,14.15,9999,SIM,2026-09-29 08:00:00
+36-FISICO,36,Cidades de Sal,A Cidade sem Portas,4,Ficção histórica,"memória,cidade",moderado,melancólico,Adulto,FISICO,27.20,9,SIM,2026-09-29 08:00:00
+36-DIGITAL,36,Cidades de Sal,A Cidade sem Portas,4,Ficção histórica,"memória,cidade",moderado,melancólico,Adulto,DIGITAL,17.20,9999,SIM,2026-09-29 08:00:00
+37-FISICO,37,Reinos do Bosque,A Semente de Prata,1,Fantasia,"natureza,magia",acelerado,épico,Adulto,FISICO,23.25,16,SIM,2026-09-29 08:00:00
+37-DIGITAL,37,Reinos do Bosque,A Semente de Prata,1,Fantasia,"natureza,magia",acelerado,épico,Adulto,DIGITAL,13.25,9999,SIM,2026-09-29 08:00:00
+38-FISICO,38,Reinos do Bosque,O Bosque Adormecido,2,Fantasia,"natureza,magia",acelerado,épico,Adulto,FISICO,26.30,0,NAO,2026-09-29 08:00:00
+38-DIGITAL,38,Reinos do Bosque,O Bosque Adormecido,2,Fantasia,"natureza,magia",acelerado,épico,Adulto,DIGITAL,16.30,9999,SIM,2026-09-29 08:00:00
+39-FISICO,39,Reinos do Bosque,A Coroa de Folhas,3,Fantasia,"natureza,magia",acelerado,épico,Adulto,FISICO,29.35,6,SIM,2026-09-29 08:00:00
+39-DIGITAL,39,Reinos do Bosque,A Coroa de Folhas,3,Fantasia,"natureza,magia",acelerado,épico,Adulto,DIGITAL,19.35,9999,SIM,2026-09-29 08:00:00
+40-FISICO,40,Reinos do Bosque,O Guardião das Raízes,4,Fantasia,"natureza,magia",acelerado,épico,Adulto,FISICO,32.40,13,SIM,2026-09-29 08:00:00
+40-DIGITAL,40,Reinos do Bosque,O Guardião das Raízes,4,Fantasia,"natureza,magia",acelerado,épico,Adulto,DIGITAL,22.40,9999,SIM,2026-09-29 08:00:00
+41-FISICO,41,Luzes do Sul,A Primeira Luz,1,Drama,"identidade,recomeço",contemplativo,emocional,Adulto,FISICO,28.45,20,SIM,2026-09-29 08:00:00
+41-DIGITAL,41,Luzes do Sul,A Primeira Luz,1,Drama,"identidade,recomeço",contemplativo,emocional,Adulto,DIGITAL,18.45,9999,SIM,2026-09-29 08:00:00
+42-FISICO,42,Luzes do Sul,A Estrada do Sul,2,Drama,"identidade,recomeço",contemplativo,emocional,Adulto,FISICO,22.40,3,SIM,2026-09-29 08:00:00
+42-DIGITAL,42,Luzes do Sul,A Estrada do Sul,2,Drama,"identidade,recomeço",contemplativo,emocional,Adulto,DIGITAL,12.40,9999,SIM,2026-09-29 08:00:00
+43-FISICO,43,Luzes do Sul,O Farol de Cristal,3,Drama,"identidade,recomeço",contemplativo,emocional,Adulto,FISICO,25.45,10,SIM,2026-09-29 08:00:00
+43-DIGITAL,43,Luzes do Sul,O Farol de Cristal,3,Drama,"identidade,recomeço",contemplativo,emocional,Adulto,DIGITAL,15.45,9999,SIM,2026-09-29 08:00:00
+44-FISICO,44,Luzes do Sul,Depois do Horizonte,4,Drama,"identidade,recomeço",contemplativo,emocional,Adulto,FISICO,28.50,17,SIM,2026-09-29 08:00:00
+44-DIGITAL,44,Luzes do Sul,Depois do Horizonte,4,Drama,"identidade,recomeço",contemplativo,emocional,Adulto,DIGITAL,18.50,9999,SIM,2026-09-29 08:00:00
+45-FISICO,45,Crônicas do Tempo,O Relógio Partido,1,Ficção científica,"tempo,tecnologia",acelerado,reflexivo,Adulto,FISICO,24.55,0,NAO,2026-09-29 08:00:00
+45-DIGITAL,45,Crônicas do Tempo,O Relógio Partido,1,Ficção científica,"tempo,tecnologia",acelerado,reflexivo,Adulto,DIGITAL,14.55,9999,SIM,2026-09-29 08:00:00
+46-FISICO,46,Crônicas do Tempo,A Hora Esquecida,2,Ficção científica,"tempo,tecnologia",acelerado,reflexivo,Adulto,FISICO,27.60,7,SIM,2026-09-29 08:00:00
+46-DIGITAL,46,Crônicas do Tempo,A Hora Esquecida,2,Ficção científica,"tempo,tecnologia",acelerado,reflexivo,Adulto,DIGITAL,17.60,9999,SIM,2026-09-29 08:00:00
+47-FISICO,47,Crônicas do Tempo,Os Dias Invertidos,3,Ficção científica,"tempo,tecnologia",acelerado,reflexivo,Adulto,FISICO,30.65,14,SIM,2026-09-29 08:00:00
+47-DIGITAL,47,Crônicas do Tempo,Os Dias Invertidos,3,Ficção científica,"tempo,tecnologia",acelerado,reflexivo,Adulto,DIGITAL,20.65,9999,SIM,2026-09-29 08:00:00
+48-FISICO,48,Crônicas do Tempo,O Último Minuto,4,Ficção científica,"tempo,tecnologia",acelerado,reflexivo,Adulto,FISICO,33.70,0,NAO,2026-09-29 08:00:00
+48-DIGITAL,48,Crônicas do Tempo,O Último Minuto,4,Ficção científica,"tempo,tecnologia",acelerado,reflexivo,Adulto,DIGITAL,23.70,9999,SIM,2026-09-29 08:00:00
